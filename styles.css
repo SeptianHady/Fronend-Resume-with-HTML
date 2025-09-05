@@ -19,7 +19,7 @@
             overflow: hidden;
         }
         .header {
-            background: linear-gradient(to right, #4f46e5, #7c3aed);
+            background: linear-gradient(to right, #4678e5, #7c3aed);
             color: #ffffff;
             padding: 2rem;
             display: flex;
@@ -31,7 +31,7 @@
             width: 120px;
             height: 120px;
             border-radius: 50%;
-            border: 4px solid #6366f1;
+            border: 4px solid #333338;
             box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
             margin-bottom: 1rem;
         }
@@ -136,4 +136,47 @@
         }
         .node-fill {
             width: 60%;
+        }
+        .certifications ul {
+            padding-left: 1.5rem;
+            color: #4a515a;
+        }
+        .certifications li {
+            margin-bottom: 0.5rem;
+        }
+        .languages ul {
+            padding-left: 1.5rem;
+            display: block;
+            gap: 1rem;
+        }
+        .languages li {
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+        @media (max-width: 768px) {
+            .header {
+                padding: 1rem;
+            }
+            .header .profile-photo {
+                width: 100px;
+                height: 100px;
+            }
+            .header h1 {
+                font-size: 2rem;
+            }
+            .header .position {
+                font-size: 1rem;
+            }
+            .content {
+                padding: 1rem;
+            }
+            .experience .timeline::before {
+                left: 24px;
+            }
+            .experience .item {
+                padding-left: 4rem;
+            }
+            .experience .item::before {
+                left: 12px;
+            }
         }
