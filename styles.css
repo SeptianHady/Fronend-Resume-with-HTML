@@ -158,7 +158,7 @@
             color: white;
             font-weight: 500;
         }
-        .skill-item:hover .percent {
+        .skill-fill:hover .percent {
             opacity: 1;
         }
         .certifications ul {
