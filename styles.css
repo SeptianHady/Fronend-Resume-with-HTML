@@ -47,6 +47,14 @@
         .header p {
             margin: 0.5rem 0 0;
             color: #e5e7eb;
+            a{
+                color: inherit; 
+                background-color: transparent; 
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
         }
         .content {
             padding: 2rem;
@@ -115,6 +123,7 @@
             margin: 0 0 0.5rem 0;
         }
         .skills .skill-bar {
+            position: relative;
             height: 14px;
             background-color: #e5e7eb;
             border-radius: 7px;
@@ -122,6 +131,7 @@
             margin-bottom: 1rem;
         }
         .skills .skill-fill {
+            position: relative;
             height: 100%;
             background: linear-gradient(to right, #4f46e5, #7c3aed);
         }
@@ -136,6 +146,20 @@
         }
         .node-fill {
             width: 60%;
+        }
+        .percent {
+            position: absolute;
+            right: 4px;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            font-size: 15px;
+            color: white;
+            font-weight: 500;
+        }
+        .skill-item:hover .percent {
+            opacity: 1;
         }
         .certifications ul {
             padding-left: 1.5rem;
