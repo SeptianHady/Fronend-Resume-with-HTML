@@ -109,3 +109,31 @@
             color: #4b5563;
             line-height: 1.6;
         }
+        .skills .skill-item h4 {
+            font-weight: 500;
+            color: #374151;
+            margin: 0 0 0.5rem 0;
+        }
+        .skills .skill-bar {
+            height: 14px;
+            background-color: #e5e7eb;
+            border-radius: 7px;
+            overflow: hidden;
+            margin-bottom: 1rem;
+        }
+        .skills .skill-fill {
+            height: 100%;
+            background: linear-gradient(to right, #4f46e5, #7c3aed);
+        }
+        .js-fill {
+            width: 65%;
+        }
+        .html-fill {
+            width: 85%;
+        }
+        .python-fill {
+            width: 65%;
+        }
+        .node-fill {
+            width: 60%;
+        }
