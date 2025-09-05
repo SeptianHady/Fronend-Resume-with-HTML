@@ -89,3 +89,23 @@
             color: #4b5563;
             line-height: 1.5;
         }
+        .education, .skills, .certifications {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .education .sklh-item h3 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin: 0;
+            margin-bottom: 0.25rem;
+        }
+        .education .sklh-item .sklh {
+            color: #7c3aed;
+            margin: 0;
+            margin-bottom: 0.5rem;
+        }
+        .education .sklh-item p {
+            color: #4b5563;
+            line-height: 1.6;
+        }
