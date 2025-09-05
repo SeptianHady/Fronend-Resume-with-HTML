@@ -1,0 +1,174 @@
+ body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            color: #1f2937;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        .cv-container {
+            max-width: 800px;
+            width: 100%;
+            background-color: #ffffff;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(to right, #4f46e5, #7c3aed);
+            color: #ffffff;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .header .profile-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid #6366f1;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1rem;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin: 0;
+        }
+        .header .position {
+            font-size: 1.25rem;
+            margin: 0.5rem 0;
+        }
+        .header p {
+            margin: 0.5rem 0 0;
+            color: #e5e7eb;
+        }
+        .content {
+            padding: 2rem;
+        }
+        .section {
+            margin-bottom: 2rem;
+        }
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1f2937;
+            border-bottom: 2px solid #4f46e5;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .summary p {
+            line-height: 1.5;
+            color: #4b5563;
+        }
+        .experience .timeline {
+            position: relative;
+        }
+        .experience .item {
+            position: relative;
+            padding: 1rem 2rem;
+            margin-bottom: 0.5rem;
+        }
+        .experience h3 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin: 0;
+            margin-bottom: 0.2rem;
+        }
+        .experience .company {
+            color: #7c3aed;
+            margin: 0;
+            margin-bottom: 0.5rem;
+        }
+        .experience p {
+            color: #4b5563;
+            line-height: 1.5;
+        }
+        .education, .skills, .certifications {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .education .edu-item h3 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin: 0;
+            margin-bottom: 0.25rem;
+        }
+        .education .edu-item .uni {
+            color: #7c3aed;
+            margin: 0;
+            margin-bottom: 0.5rem;
+        }
+        .education .edu-item p {
+            color: #4b5563;
+            line-height: 1.6;
+        }
+        .skills .skill-item h4 {
+            font-weight: 500;
+            color: #374151;
+            margin: 0 0 0.5rem 0;
+        }
+        .skills .skill-bar {
+            height: 14px;
+            background-color: #e5e7eb;
+            border-radius: 7px;
+            overflow: hidden;
+            margin-bottom: 1rem;
+        }
+        .skills .skill-fill {
+            height: 100%;
+            background: linear-gradient(to right, #4f46e5, #7c3aed);
+        }
+        .js-fill {
+            width: 70%;
+        }
+        .html-fill {
+            width: 85%;
+        }
+        .python-fill {
+            width: 70%;
+        }
+        .node-fill {
+            width: 60%;
+        }
+        .certifications ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            color: #4a515a;
+        }
+        .certifications li {
+            margin-bottom: 0.5rem;
+        }
+        @media (max-width: 768px) {
+            .header {
+                padding: 1rem;
+            }
+            .header .profile-photo {
+                width: 100px;
+                height: 100px;
+            }
+            .header h1 {
+                font-size: 2rem;
+            }
+            .header .position {
+                font-size: 1rem;
+            }
+            .content {
+                padding: 1rem;
+            }
+            .experience .timeline::before {
+                left: 24px;
+            }
+            .experience .item {
+                padding-left: 4rem;
+            }
+            .experience .item::before {
+                left: 12px;
+            }
+        }
